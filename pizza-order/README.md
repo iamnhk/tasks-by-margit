@@ -2,6 +2,8 @@
 
 A program where users can "order" a pizza. The primary focus of that task is on working with forms.
 
+live demo https://pizza-order-task.netlify.app
+
 ## Specs
 
 - Customer's name (text input)
