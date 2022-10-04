@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Calculate your risk score</title>
+</head>
+
+<body>
+  <h1>CALCULATE YOUR INSURANCE RISC SCORE </h1>
+  <form id="form">
+    <fieldset>
+      <legend id="first_h2">Enter your details</legend>
+      <div>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" required />
+      </div>
+      <div>
+        <label for="age">Enter your age:</label>
+        <input type="number" id="age" required />
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Health conditions:</legend>
+      <div class="checkboxes">
+        <div>
+          <input type="checkbox" name="health-conditions" id="hypertension" />
+          <label for="hypertension">Hypertension</label>
+        </div>
+        <div>
+          <input type="checkbox" name="health-conditions" id="blood-sugar" />
+          <label for="blood-sugar">Blood sugar</label>
+        </div>
+        <div>
+          <input type="checkbox" name="health-conditions" id="overweight" />
+          <label for="overweight">Overweight</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Good habits:</legend>
+      <div>
+        <input type="checkbox" name="good-habits" id="exercise" />
+        <label for="exercise">Daily Exercise</label>
+      </div>
+      <div>
+        <input type="checkbox" name="good-habits" id="balanced-diet" />
+        <label for="balanced-diet">Balanced diet</label>
+      </div>
+      <div>
+        <input type="checkbox" name="good-habits" id="good-sleep" />
+        <label for="good-sleep">Good sleep</label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Bad habits:</legend>
+      <div>
+        <input type="checkbox" name="bad-habits" id="smoking" />
+        <label for="smoking">Smoking</label>
+      </div>
+      <div>
+        <input type="checkbox" name="bad-habits" id="alcohol" />
+        <label for="alcohol">Alcohol</label>
+      </div>
+      <div>
+        <input type="checkbox" name="bad-habits" id="drugs" />
+        <label for="drugs">Drugs</label>
+      </div>
+    </fieldset>
+    <div class="submit">
+      <button type="submit">Calculate risc score</button>
+    </div>
+    <div id="result"></div>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

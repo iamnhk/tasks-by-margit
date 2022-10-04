@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+* {
+  box-sizing: border-box;
+  --distance: 15;
+  --color: #103;
+}
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background-image: linear-gradient(green, yellow, skyblue);
+}
+form {
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: 2px 5px 10px rgba (0, 0, 0, 0.6);
+  border-radius: 3px;
+  padding: 30px 20px;
+  background: rgba(195, 225, 201, 0.6);
+}
+
+.required {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.8;
+  transition: all 0.1s;
+  color: #efe5cd;
+}
+input[type="text number"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+  display: inline-block;
+  width: 150px;
+}
+
+legend {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  border-top: 1px solid var(--color);
+  padding: 10px 0;
+}
+
+fieldset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#result {
+  text-align: center;
+}
+
+button {
+  background-color: #0e63da;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

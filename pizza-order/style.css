@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+* {
+  box-sizing: border-box;
+  --distance: 15;
+  --color: #103;
+}
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: url("http://www.qualiapizza.com/upload/5.jpg") center no-repeat;
+}
+h1 {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.8;
+  text-decoration: underline;
+  transition: all 0.1s;
+  color: #eeddbb;
+}
+/* form styling */
+
+form {
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: 2px 5px 10px rgba (0, 0, 0, 0.4);
+  border-radius: 3px;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.required {
+  color: red;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+}
+
+legend {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+  border-top: 1px solid var(--color);
+  padding: 10px 0;
+}
+
+fieldset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* button styling */
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #f1ad25;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* display the result in center */
+#result {
+  text-align: center;
+}

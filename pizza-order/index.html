@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza Order app</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <main>
+    <h1>Order your favorite pizza</h1>
+    <form id="order">
+      <div>
+        <label for="customer-name">Tell us what is your name:</label>
+        <input type="text" placeholder="Enter you name please" id="customer-name" required />
+      </div>
+      <fieldset>
+        <legend>First, choose your pizza size:</legend>
+        <p>(pizza price is depending on the size of the pizza)</p>
+        <div>
+          <input class="size" id="size1" type="radio" value="two:7.5" name="pizza-size" checked />
+          <label for="size1" class="size-label">for two 7,50€</label>
+        </div>
+        <div>
+          <input class="size" id="size2" type="radio" value="four:10.5" name="pizza-size" />
+          <label for="size2" class="size-label">for four 10,50€</label>
+        </div>
+        <div>
+          <input class="size" id="size3" type="radio" value="six:12.5" name="pizza-size" />
+          <label for="size3" class="size-label">for six 12,50€</label>
+        </div>
+        <div>
+          <input class="size" id="size4" type="radio" value="eight:15.5" name="pizza-size" />
+          <label for="size4" class="size-label">for eight 15,50€</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend class="section-header">
+          Pick your toppings:<br>
+        </legend>
+        <span class="header-subtxt">(Incl. 4 toppings. Extra is
+          <strong>0.50e</strong> per topping.)</span>
+
+        <ul>
+          <li><input type="checkbox" class="item-toppings" value="Pepperoni" name="toppings" id="pepperoni"><label
+              for="pepperoni">Pepperoni</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Kebab" name="toppings" id="kebab"><label
+              for="kebab">Kebab</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Chicken" name="toppings" id="chicken"><label
+              for="chicken">Chicken</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Pork" name="toppings" id="pork"><label
+              for="pork">Pork</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Minced meat" name="toppings" id="mincedmeat"><label
+              for="mincedmeat">Minced meat</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Mozzarella" name="toppings" id="mozzarella"><label
+              for="mozzarella">Mozzarella</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Red onion" name="toppings" id="redonion"><label
+              for="redonion">Red onion</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Mushroom" name="toppings" id="mushroom"><label
+              for="mushroom">Mushroom</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Pineapple" name="toppings" id="pineapple"><label
+              for="pineapple">Pineapple</label></li>
+          <li><input type="checkbox" class="item-toppings" value="Jalapeno" name="toppings" id="jalapeno"><label
+              for="jalapeno">Jalapeno</label></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>At last, select where you want to eat?</legend>
+        <label for="delivery-type">Select your delivery type</label>
+        <p>
+          Select a delivery method, home delivery costs €5, while other
+          methods are free.
+        </p>
+        <select name="delivery" id="delivery-type">
+          <option value="home" checked>Delivery to home</option>
+          <option value="eat in">Eat in</option>
+          <option value="pickup">Pickup food</option>
+        </select>
+      </fieldset>
+      <div class="submit">
+        <button type="submit">Order pizza</button>
+        <button type="reset">Reset order</button>
+      </div>
+      <div id="result"></div>
+    </form>
+
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

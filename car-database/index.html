@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <title>Car Registration Database</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <section class="search-box">
+            <h2>Search car by license number</h2>
+            <label for="search">License number</label>
+            <input type="text" id="search" placeholder="eg... ABC-123" />
+            <div>
+                <button type="button" id="search-button">
+                    Search
+                </button>
+                <p id="result"></p>
+            </div>
+        </section>
+
+        <section class="data-container">
+            <section class="data-form">
+                <h2>Insert Car Data</h2>
+                <form id="form">
+                    <div>
+                        <label for="license-number">License number</label>
+                        <input type="text" id="license-number" class="data-input" placeholder="ex. ABC-123" required />
+                    </div>
+                    <div>
+                        <label for="car-owner">Car owner</label>
+                        <input type="text" id="car-owner" class="data-input" required />
+                    </div>
+
+                    <div>
+                        <label for="car-company">Car maker</label>
+                        <input type="text" id="car-company" class="data-input" placeholder="ex. Ford" required />
+                    </div>
+
+                    <div>
+                        <label for="car-model">Car Model</label>
+                        <input type="text" id="car-model" class="data-input" placeholder="ex. Ford focus" required />
+                    </div>
+
+                    <div>
+                        <label for="car-price">Car price</label>
+                        <input type="number" id="car-price" class="data-input" required />
+                    </div>
+
+                    <div>
+                        <label for="car-color">Car color</label>
+                        <input type="text" id="car-color" class="data-input" placeholder="ex. Red" required />
+                    </div>
+
+                    <div class="input-btns">
+                        <button type="submit" id="submit">Add</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </section>
+            <section class="data-table">
+                <h2>Car Database</h2>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>License</th>
+                            <th>Owner</th>
+                            <th>Maker</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Color</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

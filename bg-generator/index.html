@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    <link rel="stylesheet" href="style.css" />
+    <title>Background Generator</title>
+</head>
+
+<body>
+    <aside>
+        <form id="bg-generator">
+            <h2>Pick Colors</h2>
+            <div class="color-picker">
+                <input type="color" id="first-color" class="color-picker" value="#00c9b7"
+                    aria-label="pick first color" />
+                <input type="color" id="second-color" class="color-picker" value="#A8EB12"
+                    aria-label="pick second color" />
+            </div>
+            <h2>Direction</h2>
+            <div class="directions">
+                <div class="direction">
+                    <input type="radio" name="direction" value="to bottom right" id="to_bottom_right"
+                        class="direction" />
+                    <label for="to_bottom_right" aria-label="to bottom right"><span
+                            class="bi bi-arrow-down-right"></span></label>
+                </div>
+                <div class="direction">
+                    <input checked type="radio" name="direction" value="to bottom" id="to_bottom" class="direction" />
+                    <label for="to_bottom" aria-label="to bottom"><span class="bi bi-arrow-down"></span></label>
+                </div>
+                <div class="direction">
+                    <input type="radio" name="direction" value="to bottom left" id="to_bottom_left" class="direction" />
+                    <label for="to_bottom_left" aria-label="to bottom left"><span
+                            class="bi bi-arrow-down-left"></span></label>
+                </div>
+                <div class="direction">
+                    <input type="radio" name="direction" value="to right" id="to_right" class="direction" />
+                    <label for="to_right" aria-label="to right"><span class='bi bi-arrow-right'></span></label>
+                </div>
+                <div class="direction"></div>
+                <div class="direction">
+                    <input type="radio" name="direction" value="to left" id="to_left" class="direction" />
+                    <label for="to_left" aria-label="to left"><span class="bi bi-arrow-left"></span></label>
+                </div>
+                <div class="direction">
+                    <input type="radio" name="direction" value="to top right" id="to_top_right" class="direction" />
+                    <label for="to_top_right" aria-label="to top right"><span
+                            class="bi bi-arrow-up-right"></span></label>
+                </div>
+                <div class="direction">
+                    <input type="radio" name="direction" value="to top" id="to_top" class="direction" />
+                    <label for="to_top" aria-label="to top"><span class="bi bi-arrow-up"></span></label>
+                </div>
+                <div class="direction">
+                    <input type="radio" name="direction" value="to top left" id="to_top_left" class="direction" />
+                    <label for="to_top_left" aria-label="to top left"><i class="bi bi-arrow-up-left"></i></label>
+                </div>
+            </div>
+        </form>
+        <div id="bg-color-codes">
+            <h2>CSS code:</h2>
+            <p>linear-gradient(#1488cc, #a8eb12);</p>
+        </div>
+        <script src="script.js"></script>
+        </section>
+</body>
+
+</html>

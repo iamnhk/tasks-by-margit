@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  --Background-color: #66a6c8;
+  --button: #255778;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 3rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100vw;
+  margin: 1rem 1rem;
+  border-bottom: 3rem solid var(--Background-color);
+}
+
+/* general styling */
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+}
+
+input {
+  padding: 10px 10px;
+  width: 10rem;
+  border-radius: 3px;
+}
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid rgba(225, 165, 15, 0.899);
+}
+
+button {
+  border: none;
+  color: white;
+  border-radius: 4px;
+  background-color: var(--button);
+  font-family: Verdana;
+  padding: 1rem;
+  width: 6rem;
+  margin: 15px 0;
+}
+
+/* search box styling */
+
+.search-box {
+  flex-basis: 100%;
+  border-bottom: 3rem solid var(--Background-color);
+}
+
+.search-box > input {
+  display: inline-block;
+}
+
+/* data container layout */
+.data-container {
+  display: flex;
+}
+
+/* data input style */
+.data-input {
+  margin: 1rem 1rem;
+  justify-content: flex-start;
+}
+.data-input > div {
+  display: inline;
+}
+
+/* Table Style */
+.data-table {
+  margin: 1rem 5rem;
+}
+
+#table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#table th {
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: rgb(100, 184, 212);
+  color: white;
+}
+
+#table td,
+#table th {
+  border: 1px solid gainsboro;
+  padding: 8px;
+  text-align: center;
+}
+
+#table tr:nth-child(odd) {
+  background-color: gainsboro;
+  color: black;
+}
