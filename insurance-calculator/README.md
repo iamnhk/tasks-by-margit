@@ -1,6 +1,7 @@
 # Insurance calculator
 
 A program where user can check their risk score for insurance.
+live demo: https://insurance-calculator-task.netlify.app
 
 ## Inputs
 
